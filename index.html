@@ -562,41 +562,97 @@
       
         
           
-            <h2 id="lt-input-gt-元素"><a href="#lt-input-gt-元素" class="headerlink" title="&lt;input&gt;元素"></a><code>&lt;input&gt;</code>元素</h2><h3 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h3><h4 id="text-文本框。"><a href="#text-文本框。" class="headerlink" title="text 文本框。"></a>text 文本框。</h4><blockquote>
-<p>定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">username:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"username"</span> /&gt;</div><div class="line">Email:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"email"</span> /&gt;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<h4 id="Password-密码框。"><a href="#Password-密码框。" class="headerlink" title="Password 密码框。"></a>Password 密码框。</h4><blockquote>
-<p>定义密码字段，该字段中的字符被掩码（显示为星号或原点）。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> name=<span class="string">"pwd"</span> /&gt;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<h4 id="hidden-定义隐藏的输入字段（隐藏字段对用户不可见）。"><a href="#hidden-定义隐藏的输入字段（隐藏字段对用户不可见）。" class="headerlink" title="hidden 定义隐藏的输入字段（隐藏字段对用户不可见）。"></a>hidden 定义隐藏的输入字段（隐藏字段对用户不可见）。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> /&gt;</div></pre></td></tr></table></figure>
+            <h2 id="元素"><a href="#元素" class="headerlink" title="元素"></a><input>元素</h2><h3 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h3><ul>
+<li>text </li>
+</ul>
+<ul>
+<li>文本框。定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">username:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"username"</span> /&gt;</div><div class="line">Email:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"email"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>Password </li>
+</ul>
+<ul>
+<li>密码框。定义密码字段，该字段中的字符被掩码（显示为星号或原点）。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> name=<span class="string">"pwd"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>hidden </li>
+</ul>
+<ul>
+<li>定义隐藏的输入字段（隐藏字段对用户不可见）。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"hidden"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;form action=&quot;&quot; method=&quot;get&quot;&gt;</div><div class="line">	Email:&lt;input type=&quot;text&quot; name=&quot;email&quot; /&gt;</div><div class="line">	&lt;br /&gt;</div><div class="line">	&lt;input type=&quot;text&quot; name=&quot;country&quot; value=&quot;China&quot; /&gt;</div><div class="line">	&lt;input type=&quot;submit&quot; value=&quot;submit&quot; /&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
-<h4 id="radio-定义单选按钮。"><a href="#radio-定义单选按钮。" class="headerlink" title="radio 定义单选按钮。"></a>radio 定义单选按钮。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"sex"</span> value=<span class="string">"male"</span> /&gt;Male</div><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"sex"</span> value=<span class="string">"female"</span> /&gt;Female</div></pre></td></tr></table></figure>
-<h4 id="checkout-定义复选框。"><a href="#checkout-定义复选框。" class="headerlink" title="checkout 定义复选框。"></a>checkout 定义复选框。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"vehicle"</span> value=<span class="string">"bike"</span> /&gt;I have a bike.</div><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkout"</span> name=<span class="string">"vehicle"</span> value=<span class="string">"car"</span> /&gt;I have a car.</div></pre></td></tr></table></figure>
-<h4 id="button-定义可点击按钮。常用于用户点击按钮时启动JavaScript程序。"><a href="#button-定义可点击按钮。常用于用户点击按钮时启动JavaScript程序。" class="headerlink" title="button 定义可点击按钮。常用于用户点击按钮时启动JavaScript程序。"></a>button 定义可点击按钮。常用于用户点击按钮时启动JavaScript程序。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> value=<span class="string">"Click Me"</span> onclick=<span class="string">"msg()"</span> /&gt;</div></pre></td></tr></table></figure>
-<h4 id="reset-定义重置按钮。重置按钮会清除表单中的所有数据。"><a href="#reset-定义重置按钮。重置按钮会清除表单中的所有数据。" class="headerlink" title="reset 定义重置按钮。重置按钮会清除表单中的所有数据。"></a>reset 定义重置按钮。重置按钮会清除表单中的所有数据。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"reset"</span> /&gt;</div></pre></td></tr></table></figure>
-<h4 id="Image-定义图像形式的提交按钮。必须把src属性和alt属性与之结合使用。"><a href="#Image-定义图像形式的提交按钮。必须把src属性和alt属性与之结合使用。" class="headerlink" title="Image 定义图像形式的提交按钮。必须把src属性和alt属性与之结合使用。"></a>Image 定义图像形式的提交按钮。必须把<code>src属性</code>和<code>alt属性</code>与之结合使用。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"images"</span> src=<span class="string">"1.gif"</span> alt=<span class="string">"submit"</span> /&gt;</div></pre></td></tr></table></figure>
-<h4 id="submit-定义提交按钮。提交按钮会把表单数据发送到服务器，数据会发送到表单的action属性中指定的页面。"><a href="#submit-定义提交按钮。提交按钮会把表单数据发送到服务器，数据会发送到表单的action属性中指定的页面。" class="headerlink" title="submit 定义提交按钮。提交按钮会把表单数据发送到服务器，数据会发送到表单的action属性中指定的页面。"></a>submit 定义提交按钮。提交按钮会把表单数据发送到服务器，数据会发送到表单的action属性中指定的页面。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;form action=<span class="string">"form_action.asp"</span> method=<span class="string">"get"</span>&gt;</div><div class="line">	Email:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"email"</span> /&gt;</div><div class="line">	&lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> /&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
-<h4 id="File-定义输入字段和浏览按钮，供文件上传。"><a href="#File-定义输入字段和浏览按钮，供文件上传。" class="headerlink" title="File 定义输入字段和浏览按钮，供文件上传。"></a>File 定义输入字段和浏览按钮，供文件上传。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"file"</span> /&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>radio </li>
+</ul>
+<ul>
+<li>定义单选按钮。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"sex"</span> value=<span class="string">"male"</span> /&gt;Male</div><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"sex"</span> value=<span class="string">"female"</span> /&gt;Female</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>checkout </li>
+</ul>
+<ul>
+<li>定义复选框。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"vehicle"</span> value=<span class="string">"bike"</span> /&gt;I have a bike.</div><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkout"</span> name=<span class="string">"vehicle"</span> value=<span class="string">"car"</span> /&gt;I have a car.</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>button </li>
+</ul>
+<ul>
+<li>定义可点击按钮。常用于用户点击按钮时启动JavaScript程序。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> value=<span class="string">"Click Me"</span> onclick=<span class="string">"msg()"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>reset </li>
+</ul>
+<ul>
+<li>定义重置按钮。重置按钮会清除表单中的所有数据。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"reset"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>Image </li>
+</ul>
+<ul>
+<li>定义图像形式的提交按钮。必须把<code>src属性</code>和<code>alt属性</code>与之结合使用。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"images"</span> src=<span class="string">"1.gif"</span> alt=<span class="string">"submit"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>submit </li>
+</ul>
+<ul>
+<li>定义提交按钮。提交按钮会把表单数据发送到服务器，数据会发送到表单的action属性中指定的页面。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;form action=<span class="string">"form_action.asp"</span> method=<span class="string">"get"</span>&gt;</div><div class="line">	Email:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"email"</span> /&gt;</div><div class="line">	&lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> /&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>File </li>
+</ul>
+<ul>
+<li>定义输入字段和浏览按钮，供文件上传。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"file"</span> /&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
 <h3 id="value属性"><a href="#value属性" class="headerlink" title="value属性"></a>value属性</h3><ul>
 <li>为input元素设定值。规定输入字段的初始值。</li>
-<li>另外，<input type="checkbox">和<input type="radio">中必须设置value属性。</li>
-<li>不能与<input type="file">一同使用。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> value=<span class="string">"John"</span>&gt;</div></pre></td></tr></table></figure>
+<li>另外，<code>&lt;input type=&quot;checkbox&quot; /&gt;</code>和<code>&lt;input type=&quot;radio&quot; /&gt;</code>中必须设置value属性。</li>
+<li>不能与<code>&lt;input type=&quot;file&quot; /&gt;</code>一同使用。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> value=<span class="string">"John"</span>&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="placeholder属性"><a href="#placeholder属性" class="headerlink" title="placeholder属性"></a>placeholder属性</h3><ul>
 <li>提供可描述输入字段预期值的提示信息。</li>
 <li>该提示会在输入字段为空时显示，并会在字段获得焦点时消失。</li>
-<li>此属性适用于以下<input>类型：text，search，url，telephone，email及password。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"search"</span> name=<span class="string">"user_search"</span> placeholder=<span class="string">"Search Info"</span>&gt;</div></pre></td></tr></table></figure>
+<li>此属性适用于以下<input>类型：<em>text</em>，<em>search</em>，<em>url</em>，<em>telephone</em>，<em>email</em>及<em>password</em>。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"search"</span> name=<span class="string">"user_search"</span> placeholder=<span class="string">"Search Info"</span>&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="readonly属性"><a href="#readonly属性" class="headerlink" title="readonly属性"></a>readonly属性</h3><ul>
 <li>属性规定输入字段为只读（不能修改）。</li>
-<li>readonly属性不需要值，等同于readonly=”readonly”.<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> value=<span class="string">"John"</span> <span class="built_in">readonly</span> /&gt;</div></pre></td></tr></table></figure>
+<li>readonly属性不需要值，等同于<code>readonly=&quot;readonly&quot;</code>.<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> value=<span class="string">"John"</span> <span class="built_in">readonly</span> /&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="disabled属性"><a href="#disabled属性" class="headerlink" title="disabled属性"></a>disabled属性</h3><ul>
 <li>规定输入字段是禁用的（被禁用元素不可用、不可点击、不会被提交）。</li>
-<li>disabled属性不需要值，等同于disabled=”disabled”<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> value=<span class="string">"John"</span> disabled /&gt;</div></pre></td></tr></table></figure>
+<li>disabled属性不需要值，等同于<code>disabled=&quot;disabled&quot;</code>。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> value=<span class="string">"John"</span> disabled /&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="size属性"><a href="#size属性" class="headerlink" title="size属性"></a>size属性</h3><ul>
@@ -609,7 +665,7 @@
 <li>该属性不会提供任何的反馈信息。若需要提醒用户，需编写JavaScript代码。<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"firstname"</span> maxlength=<span class="string">"10"</span> /&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="lt-select-gt-元素"><a href="#lt-select-gt-元素" class="headerlink" title="&lt;select&gt;元素"></a><code>&lt;select&gt;</code>元素</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h2 id="元素-1"><a href="#元素-1" class="headerlink" title="元素"></a><select>元素</select></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 
           
