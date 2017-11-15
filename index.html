@@ -244,6 +244,145 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/07/Form事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/07/Form事件/" itemprop="url">Form——表单事件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-07T16:43:29+08:00">
+                2017-11-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>由HTML表单内的动作触发的事件(几乎所有HTML元素都应用到，但最常用在form元素中)</p>
+</blockquote>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h2 id="onblur"><a href="#onblur" class="headerlink" title="onblur"></a>onblur</h2><ul>
+<li>元素失去焦点时运行的脚本</li>
+</ul>
+<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h2 id="onchange"><a href="#onchange" class="headerlink" title="onchange"></a>onchange</h2><ul>
+<li>在元素值被改变时运行的脚本</li>
+</ul>
+<h2 id="onfocus"><a href="#onfocus" class="headerlink" title="onfocus"></a>onfocus</h2><p>-当元素获得焦点时运行的脚本</p>
+<h2 id="onformchange"><a href="#onformchange" class="headerlink" title="onformchange"></a>onformchange</h2><p>-在表单改变时运行的脚本</p>
+<p>##onforminput</p>
+<p>-当表单获得用户输入时运行的脚本</p>
+<h2 id="oninput"><a href="#oninput" class="headerlink" title="oninput"></a>oninput</h2><p>-当元素获得用户输入时运行的脚本</p>
+<h2 id="oninvalid"><a href="#oninvalid" class="headerlink" title="oninvalid"></a>oninvalid</h2><p>-当元素无效时运行的脚本</p>
+<h2 id="onreset"><a href="#onreset" class="headerlink" title="onreset"></a>onreset</h2><p>-当表单中的重置按钮被点击时触发</p>
+<h2 id="onselect"><a href="#onselect" class="headerlink" title="onselect"></a>onselect</h2><p>-在元素中文本被选中后触发</p>
+<h2 id="onsubmit"><a href="#onsubmit" class="headerlink" title="onsubmit"></a>onsubmit</h2><p>-在提交表单时触发</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/27/html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -443,7 +582,10 @@
       
         
           
-            
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 设置cookie --&gt;</div><div class="line">var cookie = &#123;</div><div class="line">	setCookie:function(name,value,options)&#123;</div><div class="line">		var options = options ? options : &#123;&#125;,</div><div class="line">			path = options.path ? options.path : &apos;/&apos;,</div><div class="line">			domain = options.domain ? options.domain:document.domain,</div><div class="line">			time = options.expire ? ( new Date().getTime()+options.expire*1000 ) : &apos;&apos;,</div><div class="line">			expire=new Date( time ).toUTCString();</div><div class="line">		document.cookie = encodeURIComponent(name) + &apos;=&apos; + encodeURIComponent(value) + &apos;;expires = &apos;+expire + &apos;;domain=&apos; + domain + &apos;;path=&apos; + path;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 获取cookie --&gt;</div><div class="line">getCookie : function(name)&#123;</div><div class="line">	var arr,</div><div class="line">		reg=new RegExp(&apos;(^| )&apos;+name+&apos;=([^;]*)(;|$)&apos;);</div><div class="line">	if(arr=document.cookie.match(reg))&#123;</div><div class="line">		console.log(arr);</div><div class="line">		return unescape(arr[2]);</div><div class="line">	&#125;</div><div class="line">	return null;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 移除cookie --&gt;</div><div class="line">removeCookie : function(name)&#123;</div><div class="line">	var val=this.getCookie(name);</div><div class="line">	if(val!=null)&#123;</div><div class="line">		this.setCookie(name,val,&#123;</div><div class="line">			expire:-1</div><div class="line">		&#125;)</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
           
         
       
@@ -562,7 +704,7 @@
       
         
           
-            <h2 id="input元素"><a href="#input元素" class="headerlink" title="input元素"></a><em>input</em>元素</h2><h3 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h3><h4 id="text"><a href="#text" class="headerlink" title="text"></a>text</h4><ul>
+            <h2 id="input元素"><a href="#input元素" class="headerlink" title="input元素"></a>input元素</h2><h3 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h3><h4 id="text"><a href="#text" class="headerlink" title="text"></a>text</h4><ul>
 <li>文本框。定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符。</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">username:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"username"</span> /&gt;</div><div class="line">Email:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"email"</span> /&gt;</div></pre></td></tr></table></figure>
@@ -612,7 +754,7 @@
 <h3 id="placeholder属性"><a href="#placeholder属性" class="headerlink" title="placeholder属性"></a>placeholder属性</h3><ul>
 <li>提供可描述输入字段预期值的提示信息。</li>
 <li>该提示会在输入字段为空时显示，并会在字段获得焦点时消失。</li>
-<li>此属性适用于以下<input>类型：<em>text</em>，<em>search</em>，<em>url</em>，<em>telephone</em>，<em>email</em>及<em>password</em>。</li>
+<li>此属性适用于以下input类型：<em>text</em>，<em>search</em>，<em>url</em>，<em>telephone</em>，<em>email</em>及<em>password</em>。</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;input <span class="built_in">type</span>=<span class="string">"search"</span> name=<span class="string">"user_search"</span> placeholder=<span class="string">"Search Info"</span>&gt;</div></pre></td></tr></table></figure>
 <h3 id="readonly属性"><a href="#readonly属性" class="headerlink" title="readonly属性"></a>readonly属性</h3><ul>
@@ -842,7 +984,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
