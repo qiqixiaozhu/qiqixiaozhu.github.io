@@ -527,128 +527,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/14/test-my-site/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Judy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MY BLOG">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/14/test-my-site/" itemprop="url">测试</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-14T18:31:22+08:00">
-                2017-09-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 设置cookie --&gt;</div><div class="line">var cookie = &#123;</div><div class="line">	setCookie:function(name,value,options)&#123;</div><div class="line">		var options = options ? options : &#123;&#125;,</div><div class="line">			path = options.path ? options.path : &apos;/&apos;,</div><div class="line">			domain = options.domain ? options.domain:document.domain,</div><div class="line">			time = options.expire ? ( new Date().getTime()+options.expire*1000 ) : &apos;&apos;,</div><div class="line">			expire=new Date( time ).toUTCString();</div><div class="line">		document.cookie = encodeURIComponent(name) + &apos;=&apos; + encodeURIComponent(value) + &apos;;expires = &apos;+expire + &apos;;domain=&apos; + domain + &apos;;path=&apos; + path;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 获取cookie --&gt;</div><div class="line">getCookie : function(name)&#123;</div><div class="line">	var arr,</div><div class="line">		reg=new RegExp(&apos;(^| )&apos;+name+&apos;=([^;]*)(;|$)&apos;);</div><div class="line">	if(arr=document.cookie.match(reg))&#123;</div><div class="line">		console.log(arr);</div><div class="line">		return unescape(arr[2]);</div><div class="line">	&#125;</div><div class="line">	return null;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 移除cookie --&gt;</div><div class="line">removeCookie : function(name)&#123;</div><div class="line">	var val=this.getCookie(name);</div><div class="line">	if(val!=null)&#123;</div><div class="line">		this.setCookie(name,val,&#123;</div><div class="line">			expire:-1</div><div class="line">		&#125;)</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/14/表单元素/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -920,6 +798,128 @@
 <li>语法：<code>&lt;textarea wrap=&quot;soft|hard&quot;&gt;</code> </li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;textarea cols=&quot;30&quot; rows=&quot;10&quot; wrap=&quot;hard&quot;&gt;</div><div class="line">	哈哈哈，就是这么任性...</div><div class="line">&lt;/textarea&gt;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/09/14/test-my-site/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Judy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MY BLOG">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2016/09/14/test-my-site/" itemprop="url">测试</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-09-14T18:31:22+08:00">
+                2016-09-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 设置cookie --&gt;</div><div class="line">var cookie = &#123;</div><div class="line">	setCookie:function(name,value,options)&#123;</div><div class="line">		var options = options ? options : &#123;&#125;,</div><div class="line">			path = options.path ? options.path : &apos;/&apos;,</div><div class="line">			domain = options.domain ? options.domain:document.domain,</div><div class="line">			time = options.expire ? ( new Date().getTime()+options.expire*1000 ) : &apos;&apos;,</div><div class="line">			expire=new Date( time ).toUTCString();</div><div class="line">		document.cookie = encodeURIComponent(name) + &apos;=&apos; + encodeURIComponent(value) + &apos;;expires = &apos;+expire + &apos;;domain=&apos; + domain + &apos;;path=&apos; + path;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 获取cookie --&gt;</div><div class="line">getCookie : function(name)&#123;</div><div class="line">	var arr,</div><div class="line">		reg=new RegExp(&apos;(^| )&apos;+name+&apos;=([^;]*)(;|$)&apos;);</div><div class="line">	if(arr=document.cookie.match(reg))&#123;</div><div class="line">		console.log(arr);</div><div class="line">		return unescape(arr[2]);</div><div class="line">	&#125;</div><div class="line">	return null;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 移除cookie --&gt;</div><div class="line">removeCookie : function(name)&#123;</div><div class="line">	var val=this.getCookie(name);</div><div class="line">	if(val!=null)&#123;</div><div class="line">		this.setCookie(name,val,&#123;</div><div class="line">			expire:-1</div><div class="line">		&#125;)</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
           
         
